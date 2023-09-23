@@ -59,28 +59,19 @@ public class Lector extends AppCompatActivity {
     }//onActivityResult
 
     public void guardarDatos(View view){
-        Toast.makeText(this, "Datos Guardados", Toast.LENGTH_SHORT).show();
-        // Crear un objeto RegistroCodigo y agregarlo al ArrayList
-        String desc = descripcion.getText().toString();
+        Toast.makeText(this, "Datos Guardados", Toast.LENGTH_SHORT).show();        String desc = descripcion.getText().toString();
         String cost = costo.getText().toString();
         double costoR = Double.parseDouble(cost);
 
         RegistroCodigo registroCodigo = new RegistroCodigo(resultado.getText().toString(),desc,costoR);
         registros.add(registroCodigo);
-
-        // Limpiar las cajas de texto después de guardar
         descripcion.setText("");
         costo.setText("");
     }
 
     public void mostrarLista(View view) {
-        // Agregar un Intent para abrir ListaCodigosActivity
         Intent intent = new Intent(this, ListaCodigosActivity.class);
-
-        // Pasa el ArrayList de registros a la actividad ListaCodigosActivity
         intent.putExtra("registros", registros);
-
-        // Inicia la actividad ListaCodigosActivity
         startActivity(intent);
     }
 }
