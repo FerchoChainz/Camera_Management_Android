@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="titulo">Gestion de camara</string>
+    <string name="menu1">Lector de barras/QR</string>
+    <string name="menu2">Tomar Foto</string>
+    <!--MENU 1-->
+    <string name="titulo1">Lector de barra y QR</string>
+    <string name="escanear">Escanear</string>
+    <string name="res">Codigo leido</string>
+    <string name="descripcion">Captura descripcion</string>
+    <!--Menu 2-->
+    <string name="titulo2">Tomar fotografia</string>
+    <string name="foto">Tomar Fotografia</string>
+    <string name="costo">Costo</string>
+    <string name="codigos">Mostrar Lista de Codigos</string>
+</resources>
